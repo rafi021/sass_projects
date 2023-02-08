@@ -7,8 +7,9 @@ $font-md: 30px;
 $font-sm: 20px;
 
 .nav{
-    background-color: lighten($color: $color-primary, $amount: 20%);
+    background-color: transparentize( $color-primary, 0.2);
     // background-color: darken($color: $color-primary, $amount: 20%);
+    // background-color: lighten($color: $color-primary, $amount: 20%);
     ul{
         li{
             list-style: none;
