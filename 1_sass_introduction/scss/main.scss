@@ -43,6 +43,10 @@ $font-sm: 20px;
     text-align: center;
 }
 
+@function fontSize($size){
+    @return $size*2;
+}
+
 
 .banner h1{
     // @include headingStyles($font-lg);
@@ -61,4 +65,8 @@ $font-sm: 20px;
         color: $color-tertiary;
         background-color: $color-primary;
     }
+}
+
+.banner p{
+    font-size: fontSize($font-sm);
 }
