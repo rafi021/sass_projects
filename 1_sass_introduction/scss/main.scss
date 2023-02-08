@@ -7,7 +7,8 @@ $font-md: 30px;
 $font-sm: 20px;
 
 .nav{
-    background-color: $color-primary;
+    background-color: lighten($color: $color-primary, $amount: 20%);
+    // background-color: darken($color: $color-primary, $amount: 20%);
     ul{
         li{
             list-style: none;
@@ -43,7 +44,7 @@ $font-sm: 20px;
     text-align: center;
 }
 
-@function fontSize($size){
+@function fontSize($size: 25px){
     @return $size*2;
 }
 
@@ -69,4 +70,8 @@ $font-sm: 20px;
 
 .banner p{
     font-size: fontSize($font-sm);
+}
+
+.footer p{
+    font-size: fontSize();
 }
