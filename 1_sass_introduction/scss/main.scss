@@ -1,4 +1,3 @@
-// Global Sass Variables/ Scope
 $color-primary: orange;
 $color-secondary: gray;
 $color-tertiary: royalblue;
@@ -9,10 +8,25 @@ $font-sm: 20px;
 
 .nav{
     background-color: $color-primary;
+    ul{
+        li{
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                font-size: $font-sm;
+                color: $color-secondary;
+
+                &:hover{
+                    color: $color-tertiary;
+                }
+            }
+        }
+    }
 }
 
+
 .banner h1{
-    $color-secondary: red; // local variable/scope
     font-size: $font-lg;
     color: $color-secondary;
     text-align: center;
