@@ -46,14 +46,17 @@ $font-sm: 20px;
 
 .banner h1{
     // @include headingStyles($font-lg);
-    @extend .heading
+    @extend .heading;
+    &:hover{
+        background-color: green;
+    }
 }
 
 .footer h3{
     // @include headingStyles($font-md);
     // @include transitionEffect(color .5s, background-color 1s);
     @extend .heading;
-    
+
     &:hover{
         color: $color-tertiary;
         background-color: $color-primary;

@@ -20,6 +20,10 @@
   text-align: center;
 }
 
+.banner h1:hover {
+  background-color: green;
+}
+
 .footer h3:hover {
   color: royalblue;
   background-color: orange;
