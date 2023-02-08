@@ -32,6 +32,10 @@ $font-sm: 20px;
     text-align: center;
 }
 
+@mixin transitionEffect($param...){
+    transition: $param;
+}
+
 
 .banner h1{
     @include headingStyles($font-lg);
@@ -39,4 +43,9 @@ $font-sm: 20px;
 
 .footer h3{
     @include headingStyles($font-md);
+    @include transitionEffect(color .5s, background-color 1s);
+    &:hover{
+        color: $color-tertiary;
+        background-color: $color-primary;
+    }
 }
