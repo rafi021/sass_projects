@@ -13,7 +13,7 @@
   color: royalblue;
 }
 
-.heading, .footer h3, .banner h1 {
+.footer h3, .banner h1, h1 {
   color: orange;
   font-size: 40px;
   background-color: gray;
