@@ -1,3 +1,4 @@
+// Global Sass Variables/ Scope
 $color-primary: orange;
 $color-secondary: gray;
 $color-tertiary: royalblue;
@@ -11,6 +12,7 @@ $font-sm: 20px;
 }
 
 .banner h1{
+    $color-secondary: red; // local variable/scope
     font-size: $font-lg;
     color: $color-secondary;
     text-align: center;
