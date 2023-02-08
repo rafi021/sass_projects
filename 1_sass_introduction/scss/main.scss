@@ -36,14 +36,24 @@ $font-sm: 20px;
     transition: $param;
 }
 
+.heading{
+    color: $color-primary;
+    font-size: $font-lg;
+    background-color: $color-secondary;
+    text-align: center;
+}
+
 
 .banner h1{
-    @include headingStyles($font-lg);
+    // @include headingStyles($font-lg);
+    @extend .heading
 }
 
 .footer h3{
-    @include headingStyles($font-md);
-    @include transitionEffect(color .5s, background-color 1s);
+    // @include headingStyles($font-md);
+    // @include transitionEffect(color .5s, background-color 1s);
+    @extend .heading;
+    
     &:hover{
         color: $color-tertiary;
         background-color: $color-primary;
