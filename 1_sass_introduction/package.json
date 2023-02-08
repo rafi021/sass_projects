@@ -1,0 +1,15 @@
+{
+  "name": "1_sass_introduction",
+  "version": "1.0.0",
+  "description": "sass introduction",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  },
+  "scripts": {
+    "dev": "sass --watch --update --style=expanded scss:css",
+    "prod": "sass --no-source-map --style=compressed scss:css"
+  },
+  "author": "Mahmud Ibrahim",
+  "license": "MIT"
+}
