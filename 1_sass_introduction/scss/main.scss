@@ -25,15 +25,18 @@ $font-sm: 20px;
     }
 }
 
-
-.banner h1{
-    font-size: $font-lg;
+// Mixin
+@mixin headingStyles($fontSize){
+    font-size: $fontSize;
     color: $color-secondary;
     text-align: center;
 }
 
+
+.banner h1{
+    @include headingStyles($font-lg);
+}
+
 .footer h3{
-    font-size: $font-md;
-    color: $color-secondary;
-    text-align: center;
+    @include headingStyles($font-md);
 }
