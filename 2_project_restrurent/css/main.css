@@ -1,5 +1,11 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700");
 body {
-  background-color: aqua;
+  background-color: #e4e4aa;
+}
+body h1 {
+  font-size: 18px;
+  color: #333232;
 }
 
 /*# sourceMappingURL=main.css.map */
